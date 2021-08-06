@@ -4343,6 +4343,15 @@ p {
   display: inline-block;
   padding: 100px;
   margin: 20px;
+  -webkit-box-shadow: 4px 7px 21px -3px #000000;
+  box-shadow: 4px 7px 21px -3px #000000;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.galeria-container a:hover {
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
