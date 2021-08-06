@@ -1,0 +1,11 @@
+/* Webfont: Kingdom-Regular */@font-face {
+    font-family: 'Kingdom';
+    src: url('Kingdom.eot'); /* IE9 Compat Modes */
+    src: url('Kingdom.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Kingdom.woff') format('woff'), /* Modern Browsers */
+         url('Kingdom.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

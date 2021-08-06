@@ -1,0 +1,25 @@
+body {
+    // background: #c7c7c7 url('../images/bg-5.png') no-repeat center;
+}
+
+p {
+    margin-bottom: 15px;
+}
+.title, .title > * {
+    color: $title-color;
+}
+
+.title {
+    margin: 20px 0;
+}
+
+.section {
+    margin-top: 30px;
+}
+
+.section-separator {
+    width: 200px;
+    height: 1px;
+    background-color: $title-color;
+    margin: 70px auto;
+}

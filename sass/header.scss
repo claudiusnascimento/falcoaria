@@ -1,0 +1,39 @@
+.header {
+    padding: 10px 0;
+    border-bottom: 1px solid #dedede;
+}
+
+.btn-buy {
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 6px;
+    background-color: #8e7e68;
+    @include shadow-light;
+    @include animating(background-color);
+    &:hover {
+        background-color: #544c40;
+    }
+}
+
+.main-menu {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+            margin: 0 20px;
+            img {
+                width: 300px;
+            }
+
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .logo {
+        width: 100px;
+    }
+}

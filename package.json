@@ -1,0 +1,16 @@
+{
+  "name": "falcoaria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass ./sass/app.scss ./css/styles.css",
+    "watch": "sass --watch ./sass/app.scss ./css/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.35.2"
+  }
+}
