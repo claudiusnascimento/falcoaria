@@ -53,6 +53,11 @@
     box-shadow: 4px 7px 21px -3px #000000;
 }
 
+@mixin shadow-ultra-light {
+    -webkit-box-shadow: 0px 7px 9px -12px rgba(0,0,0,0.84); 
+    box-shadow: 0px 7px 9px -12px rgba(0,0,0,0.84);
+}
+
 @mixin animating($prop: all, $time: .25s, $ease: ease-in-out) {
     -webkit-transition: $prop $time $ease;
     -moz-transition: $prop $time $ease;
