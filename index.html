@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
@@ -23,21 +26,21 @@
 
     <title>Falcoaria</title>
 </head>
-<body>
+<body class="home">
     <div class="wrapper">
         <div class="header">
             <div class="container">
                 <div class="main-menu">
                     <ul>
                         <li>
-                            <a href="">
+                            <a href=".home">
                                 <img class="logo" src="./images/logo.png" alt="">
                             </a>
                         </li>
-                        <li><a href="#">Visitar</a></li>
-                        <li><a href="">Falcoaria</a></li>
-                        <li><a href="">História</a></li>
-                        <li><a href="">Apoio às aves de rapinda</a></li>
+                        <li><a href=".visitacao">Visitar</a></li>
+                        <li><a href=".falcoaria">Falcoaria</a></li>
+                        <li><a href=".historia">História</a></li>
+                        <li><a href=".apoio">Apoio às aves de rapinda</a></li>
                         <li><a class="btn-buy" href="">Comprar Ingresso</a></li>
                     </ul>
                 </div>
@@ -45,33 +48,33 @@
         </div>
         <div class="banner">
             <div class="container">
-                <div class="banner-text flex">
+                <!-- <div class="banner-text flex">
                     <h2>APOIO <br>ÀS AVES <br>DE RAPINA</h2>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="section section-intro">
             <div class="container">
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col">
                         <div class="title text-center">
-                            <h1>Centro de Falcoaria Foz do Iguaçú</h1>
+                            <h2>Sensibilização Histórica e Visão Ecológica Sobre a Natureza</h2>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="intro text-center">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit molestias deserunt id maxime enim at consequatur aperiam animi totam a cumque fuga aut, esse quam incidunt expedita doloremque nisi doloribus doloremque nisi doloribus animi anesco vim thar.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat tempora pariatur nam asperiores numquam aperiam consequuntur quia rem. Voluptatum exercitationem quo odio quam porro officiis minus numquam rerum! Obcaecati, sequi!</p>
-                        </div>
+                </div> -->
+                <div class="row unesco-section">
+                    <div class="unesco-text">
+                        <h3>Falcoaria é reconhecida pela Unesco como patrimonio imaterial e cultural da humanidade!</h3>
+                    </div>
+                    <div class="logo-unesco">
+                        <img src="./images/unesco-logo.jpeg" class="img-fluid" alt="Unesco">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <!-- <div class="container">
             <div class="section-separator"></div>
-        </div>
+        </div> -->
 
         <div class="section section-video">
             <div class="container">
@@ -92,12 +95,20 @@
             </div>
         </div>
 
-        <div class="section section-gallery">
+        <div class="section visitacao">
             <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <div class="title text-center">
-                            <h2>Galeria de Imagens</h2>
+                    <div class="title">
+                        <h2>Visitação</h2>
+                        <div class="underline-title"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="section-text">
+                            <p>Os visitantes vivenciam uma experiência única ao conhecerem o clássico mundo da falcoaria, ao passarem por uma visita guiada que revela a origem e a importância dessa arte milenar na vida e desenvolvimento dos seres humanos desde os primórdios até os dias de hoje.</p>
+                            <p>Entendem a funcionalidade de equipamentos, manejo e cuidados que são aplicados com as aves além da biologia, comportamento e diferença entre as espécies.</p>
+                            <p>Até finalmente chegarem à arena, onde irão contemplar o desempenho de voo aves de rapina e testemunhar o trabalho e cooperação entre os componentes da falcoaria histórica, e o apoio às aves de rapina.</p>
                         </div>
                     </div>
                 </div>
@@ -105,24 +116,211 @@
                     <div class="col">
                         <div class="galeria-container">
                             <a 
-                                href="./images/pics/a.jpg"
+                                href="./images/visitacao-01.jpeg"
                                 data-rel="lightcase:galeria"
-                                style="background-image: url('./images/pics/a.jpg');">
+                                style="background-image: url('./images/visitacao-01.jpeg');">
                             </a>
                             <a 
-                                href="./images/pics/centro.JPG"
+                                href="./images/visitacao-02.jpeg"
                                 data-rel="lightcase:galeria"
-                                style="background-image: url('./images/pics/centro.JPG');">
+                                style="background-image: url('./images/visitacao-02.jpeg');">
                             </a>
                             <a 
-                                href="./images/pics/common-kestrel-falco-tinnunculus-close-up-view-of--P663J5F.jpg"
+                                href="./images/visitacao-03.jpeg"
                                 data-rel="lightcase:galeria"
-                                style="background-image: url('./images/pics/common-kestrel-falco-tinnunculus-close-up-view-of--P663J5F.jpg');">
+                                style="background-image: url('./images/visitacao-03.jpeg');">
                             </a>
                             <a 
-                                href="./images/pics/peregrine-falcon-falco-peregrinus-with-blurred-bac-PA3Z9UV.jpg"
+                                href="./images/visitacao-04.jpeg"
                                 data-rel="lightcase:galeria"
-                                style="background-image: url('./images/pics/peregrine-falcon-falco-peregrinus-with-blurred-bac-PA3Z9UV.jpg');">
+                                style="background-image: url('./images/visitacao-04.jpeg');">
+                            </a>
+                            <a 
+                                href="./images/visitacao-05.jpeg"
+                                data-rel="lightcase:galeria"
+                                style="background-image: url('./images/visitacao-05.jpeg');">
+                            </a>
+                            <a 
+                                href="./images/visitacao-06.jpeg"
+                                data-rel="lightcase:galeria"
+                                style="background-image: url('./images/visitacao-06.jpeg');">
+                            </a>
+                            <a 
+                                href="./images/visitacao-07.jpeg"
+                                data-rel="lightcase:galeria"
+                                style="background-image: url('./images/visitacao-07.jpeg');">
+                            </a>
+                            <a 
+                                href="./images/visitacao-08.jpeg"
+                                data-rel="lightcase:galeria"
+                                style="background-image: url('./images/visitacao-08.jpeg');">
+                            </a>
+                            <a 
+                                href="./images/visitacao-09.jpeg"
+                                data-rel="lightcase:galeria"
+                                style="background-image: url('./images/visitacao-09.jpeg');">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section falcoaria">
+            <div class="container">
+                <div class="row">
+                    <div class="title">
+                        <h2>Falcoaria</h2>
+                        <div class="underline-title"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="section-text">
+                            <p>A falcoaria é praticada há pelo menos 2.800 anos. Indícios mais seguros de sua existência datam do século 8 a.C. e foram encontrados entre os assírios. Outros achados, porém, sugerem que o uso de falcões para caça era bem disseminado também entre os povos antigos da China, Índia, Suméria, Egito e Pérsia.</p>
+                            <p>A falcoaria é a arte de se caçar com as aves de rapina, foi base de subsistência para muitos povos no decorrer dos milênios, esporte aristocrático na Idade Média, e virou poesia na Obra de Dante Alighieri no período do Renascimento Italiano, passou pelos escritos de Shakespeare e é praticada até hoje no mundo moderno, sendo reconhecida pela UNESCO como patrimônio imaterial e cultural da humanidade.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="galeria-container">
+                            <a 
+                                href="./images/falcoaria-1.jpeg"
+                                data-rel="lightcase:falcoaria"
+                                style="background-image: url('./images/falcoaria-1.jpeg');">
+                            </a>
+                            <a 
+                                href="./images/falcoaria-2.jpeg"
+                                data-rel="lightcase:falcoaria"
+                                style="background-image: url('./images/falcoaria-2.jpeg');">
+                            </a>
+                            <a 
+                                href="./images/falcoaria-3.jpeg"
+                                data-rel="lightcase:falcoaria"
+                                style="background-image: url('./images/falcoaria-3.jpeg');">
+                            </a>
+                            <a 
+                                href="./images/falcoaria-4.jpeg"
+                                data-rel="lightcase:falcoaria"
+                                style="background-image: url('./images/falcoaria-4.jpeg');">
+                            </a>
+                            <a 
+                                href="./images/falcoaria-5.jpeg"
+                                data-rel="lightcase:falcoaria"
+                                style="background-image: url('./images/falcoaria-5.jpeg');">
+                            </a>
+                            <a 
+                                href="./images/falcoaria-6.jpeg"
+                                data-rel="lightcase:falcoaria"
+                                style="background-image: url('./images/falcoaria-6.jpeg');">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section historia">
+            <div class="container">
+                <div class="row">
+                    <div class="title">
+                        <h2>História</h2>
+                        <div class="underline-title"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="section-text">
+                            <p>No Simpósio de Abu Dhabi sobre "Falcoaria: <b>um Patrimônio Mundial</b>" em setembro de 2005, especialistas de história da falcoaria se reuniram e fizeram apresentações sobre suas várias especialidades. A falcoaria de todas as regiões do mundo foi representada, e muitos fatos emergentes surgiram que eram anteriormente desconhecidos.</p>
+                            <p>Um problema significativo com o histórico registrado é que ele só pode ser contado onde os registros existem. Estamos certos de que as origens da falcoaria são muito mais antigas do que as origens da escrita, porque os primeiros registros escritos encontrados descrevem uma falcoaria altamente organizada e técnica que deve ter levado muitas centenas, senão milhares de anos para evoluir até esse nível de sofisticação. Muitos especialistas presentes no Simpósio estão engajados em pesquisas em tempo integral sobre este assunto indescritível.</p>
+                            <p class="mention-text">Texto IAF International Falconry.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="galeria-container-historia">
+                            <a 
+                                href="./images/historia-1.jpeg"
+                                data-rel="lightcase:historia">
+                                <img src="/images/historia-1.jpeg" class="img-fluid" alt="">
+                            </a>
+                            <a 
+                                href="./images/historia-2.jpeg"
+                                data-rel="lightcase:historia">
+                                <img src="/images/historia-2.jpeg" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section apoio">
+            <div class="container">
+                <div class="row">
+                    <div class="title">
+                        <h2>Apoio às aves de rapina</h2>
+                        <div class="underline-title"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="section-text">
+                            <p>O centro de Falcoaria, presta apoio às aves de rapina oriundas do tráfico de animais silvestres, maus tratos, ou em situações adversas.</p>
+                            <p>Utilizando as técnicas da falcoaria, hoje em dia é possível oferecer um desenvolvimento psicológico e físico para rapinantes que se encontram sob cuidados humanos em ambientes controlados e que não possuem condições de serem reintroduzidos na natureza.</p>
+                            <p>A falcoaria e condicionamento de voo é considerado por muitos especialistas como o melhor manejo para aves de rapina, por aproximar o animal de seu comportamento natural garantindo o seu bem estar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="galeria-container">
+                            <a 
+                                href="./images/apoio-1.jpeg"
+                                data-rel="lightcase:galeria"
+                                style="background-image: url('./images/apoio-1.jpeg');">
+                            </a>
+                            <a 
+                                href="./images/apoio-2.jpeg"
+                                data-rel="lightcase:galeria"
+                                style="background-image: url('./images/apoio-2.jpeg');">
+                            </a>
+                            <a 
+                                href="./images/apoio-3.jpeg"
+                                data-rel="lightcase:galeria"
+                                style="background-image: url('./images/apoio-3.jpeg');">
+                            </a>
+                            <a 
+                                href="./images/apoio-4.jpeg"
+                                data-rel="lightcase:galeria"
+                                style="background-image: url('./images/apoio-4.jpeg');">
+                            </a>
+                            <a 
+                                href="./images/apoio-5.jpeg"
+                                data-rel="lightcase:galeria"
+                                style="background-image: url('./images/apoio-5.jpeg');">
+                            </a>
+                            <a 
+                                href="./images/apoio-6.jpeg"
+                                data-rel="lightcase:galeria"
+                                style="background-image: url('./images/apoio-6.jpeg');">
+                            </a>
+                            <a 
+                                href="./images/apoio-7.jpeg"
+                                data-rel="lightcase:galeria"
+                                style="background-image: url('./images/apoio-7.jpeg');">
+                            </a>
+                            <a 
+                                href="./images/apoio-8.jpeg"
+                                data-rel="lightcase:galeria"
+                                style="background-image: url('./images/apoio-8.jpeg');">
+                            </a>
+                            <a 
+                                href="./images/apoio-9.jpeg"
+                                data-rel="lightcase:galeria"
+                                style="background-image: url('./images/apoio-9.jpeg');">
                             </a>
                         </div>
                     </div>
@@ -133,10 +331,9 @@
         <div class="section section-testimonials">
             <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <div class="title text-center">
-                            <h2>Depoimentos</h2>
-                        </div>
+                    <div class="title">
+                        <h2>Depoimentos</h2>
+                        <div class="underline-title"></div>
                     </div>
                 </div>
                 <div class="row">
@@ -146,7 +343,7 @@
                             <div class="testimonial">
                                 <div class="testimonial-content">
                                     <div class="testimonial-icon">
-                                        <img src="./images/quote.png" alt="">
+                                        <i class="fa fa-quote-left" aria-hidden="true"></i>
                                     </div>
                                     <p class="description">
                                         Passeio pouco divulgado, porém, deveria ser um dos principais, história, cultura e muita emoção em ver o voo dessas aves lindas, equipe super atenciosa e percebemos que amam o que fazem, passeio imperdível...
@@ -158,7 +355,7 @@
                             <div class="testimonial">
                                 <div class="testimonial-content">
                                     <div class="testimonial-icon">
-                                        <img src="./images/quote.png" alt="">
+                                        <i class="fa fa-quote-left" aria-hidden="true"></i>
                                     </div>
                                     <p class="description">
                                         Lugar muito agradável, natureza, animais, e uma aula de Falcoaria desde dados históricos até a atualidade, gostei muito, vale a pena conhecer.
@@ -170,7 +367,7 @@
                             <div class="testimonial">
                                 <div class="testimonial-content">
                                     <div class="testimonial-icon">
-                                        <img src="./images/quote.png" alt="">
+                                        <i class="fa fa-quote-left" aria-hidden="true"></i>
                                     </div>
                                     <p class="description">
                                         Excelente opção de atrativo turístico. Equipe com competência técnica altamente preparada com atendimento humanizado e gentil. Uma experiência de imersão em cultura, história, biologia e ecologia com responsabilidade sócio ambiental. Espaço amplo em meio a natureza com espécimes adestrados e encantadores...
@@ -182,7 +379,7 @@
                             <div class="testimonial">
                                 <div class="testimonial-content">
                                     <div class="testimonial-icon">
-                                        <img src="./images/quote.png" alt="">
+                                        <i class="fa fa-quote-left" aria-hidden="true"></i>
                                     </div>
                                     <p class="description">
                                         Melhor lugar de ver a Falcoaria, muito bom, recepção ótimaaaaa! Eles explicam a história desde o surgimento até os dias de hoje, as águias, falcões e urubus chegam bem pertinho de você, mas claro que com segurança! Maravilhoso! Vale muito a pena!!!
@@ -194,7 +391,7 @@
                             <div class="testimonial">
                                 <div class="testimonial-content">
                                     <div class="testimonial-icon">
-                                        <img src="./images/quote.png" alt="">
+                                        <i class="fa fa-quote-left" aria-hidden="true"></i>
                                     </div>
                                     <p class="description">
                                         Que experiência! Muito legal mesmo entender a história da falcoaria. Ver os animais e o quanto são bem tratados pela equipe.
@@ -206,7 +403,7 @@
                             <div class="testimonial">
                                 <div class="testimonial-content">
                                     <div class="testimonial-icon">
-                                        <img src="./images/quote.png" alt="">
+                                        <i class="fa fa-quote-left" aria-hidden="true"></i>
                                     </div>
                                     <p class="description">
                                         Ótimo local para se visitar ao passar por Foz do Iguaçu. Equipe super atenciosa e conhecedora do tema, proporciona a imersão no universo da falcoaria, além de um contato único com a natureza. Conheci o passeio pelo guia Adilson.
@@ -218,7 +415,7 @@
                             <div class="testimonial">
                                 <div class="testimonial-content">
                                     <div class="testimonial-icon">
-                                        <img src="./images/quote.png" alt="">
+                                        <i class="fa fa-quote-left" aria-hidden="true"></i>
                                     </div>
                                     <p class="description">
                                         Sensacional, estão de parabéns pelo trabalho, pelo lugar, pessoa extremamente simpáticas.. amei, sou da cidade e super recomendo a visita!
@@ -235,10 +432,9 @@
         <div class="section section-contact">
             <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <div class="title text-center">
-                            <h2>Nos envie uma mensagem</h2>
-                        </div>
+                    <div class="title">
+                        <h2>Nos envia uma mensagem</h2>
+                        <div class="underline-title"></div>
                     </div>
                 </div>
                 <div class="row">
@@ -324,11 +520,17 @@
         <div class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <img class="img-fluid" src="./images/logomarca/Logomarca_Positvivo_monocromatico.png" alt="">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-10">
                         <h2>Centro de Falcoaria Foz do Iguaçu</h2>
+                        <div class="social">
+                            <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>

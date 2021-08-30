@@ -14,14 +14,17 @@
 @import './bootstrap/mixins/_gradients';
 @import './bootstrap/mixins/_transition';
 @import './bootstrap/mixins/_hover';
+@import './bootstrap/mixins/_image';
 @import './bootstrap/mixins/_buttons';
 @import './bootstrap/mixins/_forms';
 @import './bootstrap/_buttons';
+@import './bootstrap/_images';
 @import './bootstrap/forms';
 
 @import 'site';
 @import 'header';
 @import 'banner';
+@import 'body';
 @import 'footer';
 @import 'image-gallery';
 

@@ -1,0 +1,34 @@
+.unesco-section {
+
+    align-items: center;
+
+    .unesco-text {
+        flex: 2;
+        h3 {
+            font-size: 40px;
+            color: #4d433d;
+        }
+    }
+
+    .logo-unesco {
+        flex: 1;
+    }
+}
+
+.galeria-container-historia {
+    display: flex;
+    margin-bottom: 40px;
+    
+    a {
+        display: block;
+        flex: 1;
+    }
+    
+
+    .mention-text {
+        text-align: right;
+        font-style: italic;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+}

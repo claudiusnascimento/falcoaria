@@ -1,6 +1,34 @@
+.wrapper {
+    margin-top: 136px;
+    @include animating;
+}
+
 .header {
     padding: 10px 0;
     border-bottom: 1px solid #dedede;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    height: 135px;
+    z-index: 100;
+    @include animating;
+}
+
+.wrapper.min {
+    margin-top: 60px;
+    .header {
+        height: 60px;
+
+        .main-menu .logo {
+            width: 35px;
+            @include animating;
+        }
+
+        .btn-buy {
+            padding: 5px;
+        }
+    }
 }
 
 .btn-buy {
@@ -8,6 +36,7 @@
     padding: 10px 10px;
     border-radius: 6px;
     background-color: #8e7e68;
+    @include animating;
     @include shadow-light;
     @include animating(background-color);
     &:hover {
@@ -16,6 +45,7 @@
 }
 
 .main-menu {
+    @include animating;
     ul {
         display: flex;
         justify-content: space-between;
@@ -25,10 +55,12 @@
             margin: 0 20px;
             img {
                 width: 300px;
+                @include animating;
             }
 
             a {
                 font-size: 18px;
+                @include animating;
             }
         }
     }

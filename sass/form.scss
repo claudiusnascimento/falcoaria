@@ -1,5 +1,14 @@
 .form-container {
     margin-bottom: 80px;
+    .btn-success {
+        color: #fff;
+        background-color: #504636;
+        border-color: #403630;
+    }
+
+    .form-control {
+        border-radius: 0;
+    }
 }
 
 .icon-box-info {

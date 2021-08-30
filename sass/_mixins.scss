@@ -64,3 +64,8 @@
     -o-transition: $prop $time $ease;
     transition: $prop $time $ease;
 }
+
+@mixin gradient {
+    background: rgb(59,52,48);
+    background: linear-gradient(90deg, rgba(59,52,48,1) 0%, rgba(85,75,55,1) 72%, rgba(64,54,48,1) 100%);
+}

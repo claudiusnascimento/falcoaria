@@ -26,7 +26,33 @@ $(document).ready(function() {
         pagination:true,
         navigation:false,
         slideSpeed:1000,
-        autoPlay:true
+        autoPlay:false
     });
+
+    $('.main-menu li a').on('click', function(e) {
+        e.preventDefault();
+
+        var target = $(this).attr('href');
+
+        $('html,body').animate({
+            scrollTop: $(target).first().offset().top - 70 
+        }, 'slow');
+    });
+
+    var wrapper = $('.wrapper');
+    $(window).scroll(function (event) {
+        var scroll = $(window).scrollTop();
+        
+        if(scroll > 50) {
+            if(!wrapper.hasClass('min')) {
+                wrapper.addClass('min');
+            }
+        } else {
+            if(wrapper.hasClass('min')) {
+                wrapper.removeClass('min');
+            }
+        }
+    });
+    
     
 })
