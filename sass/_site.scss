@@ -9,6 +9,11 @@ p {
 .title, .title > * {
     color: $title-color;
     font-size: 40px;
+    font-family: $font-falcoaria;
+
+    @include tablet {
+        font-size: 30px;
+    }
 }
 
 .title {
@@ -24,6 +29,10 @@ p {
 
 .section {
     margin-top: 30px;
+
+    @include phone {
+        padding: 0 15px;
+    }
 }
 
 .section-separator {
@@ -34,6 +43,20 @@ p {
 }
 
 .section-text {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 40px;
+
+    @include tablet {
+        font-size: 18px;
+    }
+}
+
+.container {
+    @include phone {
+        padding: 0 15px;
+    }
+}
+
+ul > li a {
+    font-family: $font-falcoaria;
 }

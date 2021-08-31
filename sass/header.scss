@@ -1,6 +1,10 @@
 .wrapper {
     margin-top: 136px;
     @include animating;
+
+    @include tablet {
+        margin-top: 0px;
+    }
 }
 
 .header {
@@ -13,6 +17,17 @@
     height: 135px;
     z-index: 100;
     @include animating;
+
+    @include tablet {
+        display: none;
+    }
+
+    .container {
+
+        @include tablet {
+            max-width: 100%;
+        }
+    }
 }
 
 .wrapper.min {
@@ -29,16 +44,21 @@
             padding: 5px;
         }
     }
+
+    .logo {
+        top: 5px;
+    }
 }
 
 .btn-buy {
-    color: #fff;
+    color: #917f69;
     padding: 10px 10px;
     border-radius: 6px;
-    background-color: #8e7e68;
+    @include gradient;
     @include animating;
     @include shadow-light;
     @include animating(background-color);
+    
     &:hover {
         background-color: #544c40;
     }
@@ -66,6 +86,8 @@
     }
 
     .logo {
+        position: relative;
+        top: 10px;
         width: 100px;
     }
 }

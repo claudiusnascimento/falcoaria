@@ -1,0 +1,65 @@
+.price-table {
+    display: flex;
+    text-align: center;
+
+    @include tablet {
+        flex: 1;
+        flex-direction: column;
+    }
+    .price {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        background: $background-color;
+        color: $text-color;
+        border: 1px solid $text-color;
+        min-height: 350px;
+        padding: 20px;
+
+        @include tablet {
+            min-height: auto;
+            padding: 40px 20px;
+        }
+
+        .italic {
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .price-value {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0px 0 30px;
+            color: #969696
+        }
+
+        .price-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            .price-table-infos {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .price-table-info {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+
+        .price-footer {
+            padding: 20px 0;
+            font-size: 22px;
+            a {
+                color: $text-color;
+            }
+        }
+        
+    }
+}
