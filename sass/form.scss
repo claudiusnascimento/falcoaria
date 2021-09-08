@@ -9,6 +9,10 @@
     .form-control {
         border-radius: 0;
     }
+
+    .info a {
+        color: #fff;
+    }
 }
 
 .icon-box-info {
@@ -79,5 +83,9 @@
     .form-label {
         display: inline-block;
         margin-bottom: 10px;
+    }
+
+    textarea.form-control {
+        height: 150px !important;
     }
 }

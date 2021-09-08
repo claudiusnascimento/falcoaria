@@ -24,6 +24,7 @@
         media="screen" 
         href="./fonts/Web-TT/Kingdom.css" />
     
+    <link rel="stylesheet" href="./js/toastr-master/toastr.min.css">
     <link rel="stylesheet" href="./js/lightcase-2.5.0/src/css/lightcase.css">
     <link rel="stylesheet" href="./css/styles.css?v=1.0">
 
@@ -364,13 +365,13 @@
                         <div class="underline-title"></div>
                     </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-xs-12">
                         <div class="section-text">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod debitis id sequi ab hic dolore aliquam possimus dolores voluptates, quo, et suscipit veniam reiciendis exercitationem minus. Enim temporibus culpa tempora.</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="row">
                     <div class="price-table">
                         <div class="price">
@@ -557,7 +558,7 @@
                 </div>
             </div>
         </div>
-
+        
         <div class="section section-contact">
             <div class="container">
                 <div class="row">
@@ -582,7 +583,7 @@
                                                     Enfereço
                                                 </div>
                                                 <div class="info">
-                                                    <p>Rua dos Cataventos - Porto Alegre - RS</p>
+                                                    <p>Rua Silmar Benitez 280 - Foz do Iguaçu - PR</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -595,7 +596,7 @@
                                                     Vamos conversar?
                                                 </div>
                                                 <div class="info">
-                                                    <p>45 9 8282 6486</p>
+                                                    <p>45 9 9828 2015</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -608,7 +609,7 @@
                                                     Contato
                                                 </div>
                                                 <div class="info">
-                                                    <p>contato@falcoaria.com.br</p>
+                                                    <p><a href="mailTo:fabiana@centrodefalcoariafoz.com.br">fabiana@centrodefalcoariafoz.com.br</a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -617,21 +618,24 @@
                                 <div class="col-md-6">
                                     <div class="form-contact">
                                         <div class="form-contact-body">
-                                            <form action="">
+                                            <form action="./send.php" method="POST">
                                                 <div class="form-group">
                                                     <label class="form-label" for="">Nome</label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" name="name" class="form-control">
+                                                    <span class="error-name"></span>
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="form-label" for="">E-mail</label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" name="email" class="form-control">
+                                                    <span class="error-email"></span>
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="form-label" for="">Mensagem</label>
-                                                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                                                    <textarea name="message" id="" cols="30" rows="10" class="form-control"></textarea>
+                                                    <span class="error-message"></span>
                                                 </div>
                                                 <div class="form-group text-center">
-                                                    <button class="btn btn-success">
+                                                    <button class="btn btn-success send-button">
                                                         ENVIAR
                                                     </button>
                                                 </div>
@@ -673,6 +677,7 @@
     <script src="./js/jquery-migrate.1.4.1.min.js"></script>
     <script src="./js/jquery.event.touch.js"></script>
     <script src="./js/lightcase-2.5.0/src/js/lightcase.js"></script>
+    <script src="./js/toastr-master/toastr.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     <script src="./js/app.js?v=1.0"></script>
 </body>

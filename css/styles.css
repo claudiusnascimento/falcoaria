@@ -57,6 +57,9 @@ a {
 .form-container .form-control {
   border-radius: 0;
 }
+.form-container .info a {
+  color: #fff;
+}
 
 .icon-box-info .fa {
   color: #9e6005;
@@ -120,6 +123,9 @@ a {
 .form-contact .form-label {
   display: inline-block;
   margin-bottom: 10px;
+}
+.form-contact textarea.form-control {
+  height: 150px !important;
 }
 
 .section-video {
@@ -5506,6 +5512,32 @@ p {
 
 ul > li a {
   font-family: "Kingdom", Georgia;
+}
+
+.btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus, .show > .btn-success.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem #4c4334;
+}
+
+.btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active, .show > .btn-success.dropdown-toggle {
+  color: #fff;
+  background-color: #5d5343;
+  border-color: #4c4334;
+}
+
+.btn-success:focus, .btn-success.focus {
+  background-color: #423a32;
+  border-color: #917f69;
+  box-shadow: 0 0 0 0.2rem #423a32;
+}
+
+.btn-success:hover {
+  background-color: #423a32;
+  border-color: #917f69;
+}
+
+[class^=error-] {
+  color: red;
+  font-size: 14px;
 }
 
 #nav-icon {

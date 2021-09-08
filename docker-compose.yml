@@ -1,0 +1,46 @@
+version: '3'
+services:
+
+  #PHP Service
+  app_falcoaria:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: digitalocean.com/php
+    container_name: app_falcoaria
+    restart: unless-stopped
+    tty: true
+    environment:
+      SERVICE_NAME: app
+      SERVICE_TAGS: dev
+    working_dir: /var/www
+    volumes:
+       - ./:/var/www
+       - ./docker/php/local.ini:/usr/local/etc/php/conf.d/local.ini
+    networks:
+      - way-network
+
+  #Nginx Service
+  webserver_falcoaria:
+    image: nginx:alpine
+    container_name: webserver_falcoaria
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "8080:80"
+      - "443:443"
+    volumes:
+      - ./:/var/www
+      - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
+    networks:
+      - way-network
+
+#Docker Networks
+networks:
+  way-network:
+    driver: bridge
+
+#Volumes
+volumes:
+  dbdata:
+    driver: local
