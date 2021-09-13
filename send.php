@@ -12,7 +12,7 @@ $headers .= "From: contato@centrodefalcoariafoz.com.br\r\n"; // remetente
 $headers .= "Reply-To: " . $email . "\r\n" .
 $headers .= "Return-Path: ". $email ."\r\n"; // return-path
 
-$envio = mail("fabiana@centrodefalcoariafoz.com.br", "Contato enviado do Site", $message, $headers);
+$envio = mail("contato@centrodefalcoariafoz.com.br", "Contato enviado do Site", $message, $headers);
  
 if($envio) {
     echo json_encode(['success' => true, 'message' => 'Mensagem enviada com sucesso']);
